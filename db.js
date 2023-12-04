@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-var mongoURL = 'mongodb+srv://internetsoundseasy:Alphamon04@atlascluster.35hwcdo.mongodb.net/mern-rooms';
+var mongoURL = 'mongodb+srv://internetsoundseasy:Alphamon04@atlascluster.35hwcdo.mongodb.net/users';
 
 mongoose.connect(mongoURL, { useUnifiedTopology: true, useNewUrlParser: true });
 
