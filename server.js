@@ -17,7 +17,7 @@ app.post("/user", async (req, res) => {
 
 app.delete("/user", async (req, res) => {
   try {
-    await User.deleteOne(req.body);
+    await User.deleteOne({ _id: req.body._id });
     res.status(200).json({ message: "User deleted" });
   } catch (err) {
     res.status(500).json({ message: err.message });
